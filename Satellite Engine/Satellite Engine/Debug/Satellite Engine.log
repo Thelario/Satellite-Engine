@@ -1,2 +1,5 @@
-﻿  main.cpp
-  Satellite Engine.vcxproj -> C:\Users\49427234\Desktop\Github Projects\Satellite-Engine\Satellite Engine\Debug\Satellite Engine.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: El directorio intermedio (Debug\) contiene archivos compartidos de otro proyecto (Satellite-Engine-Core.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
+Main.obj : error LNK2019: símbolo externo _glfwInit sin resolver al que se hace referencia en la función _main
+C:\Users\49427234\Desktop\Github Projects\Satellite-Engine\Satellite Engine\Dependencies\GLFW\lib-vc2019\glfw3.lib : warning LNK4272: el tipo de máquina de biblioteca 'x64' está en conflicto con el tipo de máquina de destino 'x86'
+C:\Users\49427234\Desktop\Github Projects\Satellite-Engine\Satellite Engine\Dependencies\GLFW\lib-vc2019\glfw3dll.lib : warning LNK4272: el tipo de máquina de biblioteca 'x64' está en conflicto con el tipo de máquina de destino 'x86'
+C:\Users\49427234\Desktop\Github Projects\Satellite-Engine\Satellite Engine\Debug\Satellite Engine.exe : fatal error LNK1120: 1 externos sin resolver
