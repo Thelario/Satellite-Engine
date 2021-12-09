@@ -52,6 +52,16 @@ namespace Satellite
 
 			// Callback when resizing the window happens.
 			glfwSetWindowSizeCallback(_window, windowResize);
+
+			// Make sure to try to initialize glew after a current OpenGL context has been set.
+			if (glewInit() != GLEW_OK)
+			{
+				std::cout << "Could not initialize GLEW!" << std::endl;
+				return false;
+			}
+
+			std::cout << "OpenGL " << glGetString(GL_VERSION) << std::endl;
+
 			return true;
 		}
 
