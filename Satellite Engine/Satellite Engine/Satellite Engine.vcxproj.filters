@@ -16,6 +16,9 @@
     <Filter Include="Archivos de encabezado\Graphics">
       <UniqueIdentifier>{38fb1d7f-55a1-46f9-8da4-10f456eac99c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\Input">
+      <UniqueIdentifier>{60197b7e-bc77-438e-b06a-45aec6fc0f0e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
