@@ -153,10 +153,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\Window.cpp" />
+    <ClCompile Include="src\Graphics\Window.cpp" />
+    <ClCompile Include="src\Maths\vec2.cpp" />
+    <ClCompile Include="src\Maths\vec3.cpp" />
+    <ClCompile Include="src\Maths\vec4.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Window.h" />
+    <ClInclude Include="src\Graphics\Window.h" />
+    <ClInclude Include="src\Maths\Maths.h" />
+    <ClInclude Include="src\Maths\vec2.h" />
+    <ClInclude Include="src\Maths\vec3.h" />
+    <ClInclude Include="src\Maths\vec4.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

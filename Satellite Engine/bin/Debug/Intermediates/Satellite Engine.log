@@ -1,2 +1,6 @@
-﻿  Window.cpp
+﻿  Main.cpp
+  vec2.cpp
+  vec3.cpp
+  vec4.cpp
+  Generando código...
   Satellite Engine.vcxproj -> C:\Users\49427234\Desktop\Github Projects\Satellite-Engine\Satellite Engine\bin\Debug\Satellite Engine.exe

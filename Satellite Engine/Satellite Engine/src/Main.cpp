@@ -1,12 +1,14 @@
 #include <iostream>
 
-#include "Window.h"
+#include "Graphics/Window.h"
+#include "Maths/Maths.h"
 
 int main()
 {
 	// We say that we want to use the code in the Satellite and Graphics namespaces.
 	using namespace Satellite;
 	using namespace Graphics;
+	using namespace Maths;
 
 	// We create a new Window object, passing the name, width and height.
 	Window window("Satellite", 1080, 720);
@@ -21,9 +23,6 @@ int main()
 	// We loop infinitely till the user closes the window (with the red button in the right upper corner).
 	while (!window.closed())
 	{
-		// We print in the console the width and height of the window we have created.
-		// std::cout << window.getWidth() << ", " << window.getHeight() << std::endl;
-
 		window.clear();
 
 		double x, y;
@@ -40,9 +39,9 @@ int main()
 		// drawing a white square in the center of the window.
 		glBegin(GL_QUADS);
 		glVertex2f(-0.5f, -0.5f);
-		glVertex2f(-0.5f,  0.5f);
-		glVertex2f( 0.5f,  0.5f);
-		glVertex2f( 0.5f, -0.5f);
+		glVertex2f(-0.5f, 0.5f);
+		glVertex2f(0.5f, 0.5f);
+		glVertex2f(0.5f, -0.5f);
 		glEnd();
 #else
 		glDrawArrays(GL_ARRAY_BUFFER, 0, 6);
