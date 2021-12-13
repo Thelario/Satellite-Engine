@@ -24,17 +24,6 @@ int main()
 	while (!window.closed())
 	{
 		window.clear();
-
-		double x, y;
-		window.getMousePosition(x, y);
-		std::cout << "Mouse: " << x << "," << y << std::endl;
-
-		if (window.isKeyPressed(GLFW_KEY_A))
-			std::cout << "a" << std::endl;
-
-		if (window.isMouseButtonPressed(GLFW_MOUSE_BUTTON_1))
-			std::cout << "MOUSE 1" << std::endl;
-
 #if 1
 		// drawing a white square in the center of the window.
 		glBegin(GL_QUADS);
@@ -51,3 +40,14 @@ int main()
 
 	return 0;
 }
+
+/* TESTING INPUT */
+//double x, y;
+//window.getMousePosition(x, y);
+//std::cout << "Mouse: " << x << "," << y << std::endl;
+
+//if (window.isKeyPressed(GLFW_KEY_A))
+//	std::cout << "a" << std::endl;
+
+//if (window.isMouseButtonPressed(GLFW_MOUSE_BUTTON_1))
+//	std::cout << "MOUSE 1" << std::endl;
