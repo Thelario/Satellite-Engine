@@ -62,5 +62,8 @@
     <ClInclude Include="src\Maths\maths_func.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="src\Assertions\Assert.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

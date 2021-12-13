@@ -160,6 +160,7 @@
     <ClCompile Include="src\Maths\vec4.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Assertions\Assert.h" />
     <ClInclude Include="src\Graphics\Window.h" />
     <ClInclude Include="src\Maths\mat4.h" />
     <ClInclude Include="src\Maths\Maths.h" />
