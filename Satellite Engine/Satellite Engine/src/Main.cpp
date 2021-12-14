@@ -20,6 +20,22 @@ int main()
 	glGenVertexArrays(1, &vao);
 	glBindVertexArray(vao);
 
+	//mat4 position = mat4::translation(vec3(2, 3, 4));
+	mat4 position = mat4();
+	position *= mat4::identity();
+
+	position.elements[12] = 2.0f;
+
+	// I cnanot do this because I cannot use unions, FUCK MY LIFE
+	//vec4 c0 = position.columns[3];
+	//vec4 c1 = position.columns[3];
+	//std::cout << &position.elements[12] << std::endl;
+	//std::cout << &position.columns[3].x << std::endl;
+
+	// This is NOT the way to proceed, I need to be able to do the above.
+	vec4 c2 = position.getColumn(3);
+	std::cout << c2 << std::endl;
+
 	// We loop infinitely till the user closes the window (with the red button in the right upper corner).
 	while (!window.closed())
 	{

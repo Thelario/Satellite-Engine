@@ -1,3 +1,4 @@
+/*
 #pragma once
 
 // For more information on this topic, see section 3.2.3.3 on Game Engine Architecture by Jason Gregory.
@@ -21,7 +22,7 @@
 #define ASSERT(expr) // evaluates to nothing
 
 #endif
-
+*/
 /*  Advice On Assertions */
 /* 
 It’s important to be aware of their performance cost.You may want to consider defining two kinds of assertion macros.The regular

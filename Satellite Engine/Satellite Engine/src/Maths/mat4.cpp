@@ -9,7 +9,6 @@ namespace Satellite
 			for (int i = 0; i < 4 * 4; i++)
 				elements[i] = 0.0f;
 		}
-
 		mat4::mat4(float diagonal)
 		{
 			for (int i = 0; i < 4 * 4; i++)
@@ -50,7 +49,7 @@ namespace Satellite
 			return *this;
 		}
 
-		mat4 operator*(mat4 left, mat4& right)
+		mat4 operator*(mat4 left, const mat4& right)
 		{
 			return left.multiply(right);
 		}
