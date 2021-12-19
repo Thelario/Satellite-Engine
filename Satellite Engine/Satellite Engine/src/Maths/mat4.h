@@ -11,14 +11,14 @@ namespace Satellite
 			/* I FUCKING DON'T KNOW WHY BUT I CANNOT USE UNIONS, BECAUSE WHEN I DO MY mat4.cpp file stops working.
 			*  From what I've been able to see, I get a problem in the constructor mat4(float diagonal), because all the
 			*  functions that give an error when adding the union give the error in the return, being the return a mat4(float 1.0f).
+			
+			I literally cannot use unions, and I don't know why. I hate my life. Cherno uses the union to group elements and columns 
+			so that they share the same memory address, and it is a much more elegant solution than use getColumns().
+			
 			union
 			{
 				float elements[16];
-
-				struct
-				{
-					vec4 columns[4];
-				};
+				vec4 columns[4];
 			};
 			*/
 
