@@ -2,13 +2,20 @@
 
 #include "Graphics/Window.h"
 #include "Maths/Maths.h"
+#include "Utils/FileUtils.h"
 
 int main()
 {
 	// We say that we want to use the code in the Satellite and Graphics namespaces.
 	using namespace Satellite;
+	using namespace Satellite::Utils;
 	using namespace Graphics;
 	using namespace Maths;
+
+	std::string file = read_file("src/Main.cpp");
+	std::cout << file << std::endl;
+	system("PAUSE");
+	return 0;
 
 	// We create a new Window object, passing the name, width and height.
 	Window window("Satellite", 1080, 720);
