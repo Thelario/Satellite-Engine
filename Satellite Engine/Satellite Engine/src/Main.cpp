@@ -74,3 +74,14 @@ int main()
 
 //if (window.isMouseButtonPressed(GLFW_MOUSE_BUTTON_1))
 //	std::cout << "MOUSE 1" << std::endl;
+
+/* GAME LOOP */
+/* LoadStuff();
+ * while (!shouldExitGame)
+ * {
+ *		ProcessInput();
+ *		UpdateGame();
+ *		RenderGame(); // audio, video, etc. (output)
+ * }
+ * UnloadStuff();
+ */

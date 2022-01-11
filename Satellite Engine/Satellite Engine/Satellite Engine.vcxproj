@@ -152,6 +152,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Graphics\Shader.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Graphics\Window.cpp" />
     <ClCompile Include="src\Maths\mat4.cpp" />
@@ -161,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Assertions\Assert.h" />
+    <ClInclude Include="src\Graphics\Shader.h" />
     <ClInclude Include="src\Graphics\Window.h" />
     <ClInclude Include="src\Maths\mat4.h" />
     <ClInclude Include="src\Maths\Maths.h" />
