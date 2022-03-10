@@ -1,2 +1,5 @@
 ﻿  Main.cpp
+C:\Users\49427234\Desktop\Github Projects\Satellite-Engine\Satellite Engine\Satellite Engine\src\Main.cpp(43,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\49427234\Desktop\Github Projects\Satellite-Engine\Satellite Engine\Satellite Engine\src\Main.cpp(78,10): warning C4477: 'printf' : la cadena de formato '%d' requiere un argumento de tipo 'int', pero el argumento variádico 1 tiene el tipo 'unsigned __int64'
+C:\Users\49427234\Desktop\Github Projects\Satellite-Engine\Satellite Engine\Satellite Engine\src\Main.cpp(78,10): message : considere el uso de ' %zd' en la cadena de formato
   Satellite Engine.vcxproj -> C:\Users\49427234\Desktop\Github Projects\Satellite-Engine\Satellite Engine\bin\Debug\Satellite Engine.exe

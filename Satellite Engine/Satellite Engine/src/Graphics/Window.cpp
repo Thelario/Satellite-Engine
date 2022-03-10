@@ -113,6 +113,11 @@ namespace Satellite
 
 		void Window::update()
 		{
+			// The following code checks for possible errors and prints them
+			GLenum error = glGetError();
+			if (error != GL_NO_ERROR)
+				std::cout << "OpenGL Error: " << error << std::endl;
+
 			// GLFW needs to communicate regularly with the window system both in order to receive events and to show 
 			// that the application hasn't locked up. Event processing must be done regularly while you have visible 
 			// windows and is normally done each frame after buffer swapping.
@@ -125,7 +130,7 @@ namespace Satellite
 			// GLFW windows by default use double buffering. That means that each window has two rendering buffers; 
 			// a front buffer and a back buffer. The front buffer is the one being displayed and the back buffer the 
 			// one you render to. When the entire frame has been rendered, the buffers need to be swapped with one another,
-			// so the back buffer becomes the front bufferand vice versa.
+			// so the back buffer becomes the front buffer and vice versa.
 			glfwSwapBuffers(_window);
 		}
 
@@ -136,7 +141,7 @@ namespace Satellite
 
 		void window_resize(GLFWwindow* window, int width, int height)
 		{
-			glViewport(0, 0, width, height);
+			glViewport(0, 0, width, height); // Sets the viewport of the window
 		}
 
 		void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
